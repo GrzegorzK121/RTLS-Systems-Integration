@@ -37,7 +37,7 @@ The **Pozyx** system consists of four reference nodes connected to the Pozyx ser
 
 Both systems provide localization results to a computer running the integration application.
 
-![RTLS system topology](images/system_topology.png)
+![RTLS system topology](system_topology.png)
 
 *Figure 1. Topology of the experimental Ubisense Dimension4 and Pozyx infrastructures.*
 
@@ -49,7 +49,7 @@ Both systems provide localization results to a computer running the integration 
 
 Four Pozyx reference nodes were physically installed in the test corridor.
 
-![Pozyx reference node](images/pozyx_anchor.jpg)
+![Pozyx reference node](pozyx_anchor.jpg)
 
 *Figure 2. Pozyx reference node installed in the experimental environment.*
 
@@ -57,7 +57,7 @@ Four Pozyx reference nodes were physically installed in the test corridor.
 
 The Dimension4 infrastructure was installed in the second part of the corridor.
 
-![Ubisense reference nodes](images/ubisense_anchors.jpg)
+![Ubisense reference nodes](ubisense_anchors.jpg)
 
 *Figure 3. Ubisense reference nodes installed in the test corridor.*
 
@@ -74,7 +74,7 @@ Pozyx and Dimension4 use separate data acquisition paths:
 
 The decoded information is stored in the shared `current_state` structure. The fusion engine then calculates the final position of the logical tracked object. Results are delivered to browser interfaces through WebSocket communication and can also be stored in CSV files.
 
-![Application architecture](images/application_architecture.png)
+![Application architecture](application_architecture.png)
 
 *Figure 4. Architecture of the developed inter-system RTLS data integration application.*
 
@@ -200,7 +200,7 @@ X = 20 m ... 24 m
 
 The fusion process is illustrated below.
 
-![Fusion algorithm](images/fusion_flowchart.png)
+![Fusion algorithm](fusion_flowchart.png)
 
 *Figure 5. Flowchart of the algorithm used to determine the final position of the virtual tracked object.*
 
@@ -329,7 +329,7 @@ The FastAPI backend provides several browser-based views.
 
 The main browser interface displays the localization map and live readings from the connected systems.
 
-![Main application interface](images/main_interface.png)
+![Main application interface](main_interface.png)
 
 *Figure 6. Main browser interface of the RTLS integration application.*
 
@@ -347,7 +347,7 @@ It displays the latest readings from:
 
 The operator can select the known reference position and save the current measurement directly from a smartphone.
 
-![Mobile measurement interface](images/mobile_interface.png)
+![Mobile measurement interface](mobile_interface.png)
 
 *Figure 7. Mobile interface used during reference measurements.*
 
@@ -481,7 +481,7 @@ CSV files
 │   ├── zapis.html
 │   └── style.css
 │
-└── images/
+└── 
     ├── system_topology.png
     ├── application_architecture.png
     ├── fusion_flowchart.png
